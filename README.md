@@ -1,58 +1,32 @@
 # ZenStreet Application
 
+A modern event management platform built with React.js and NestJS, enabling users to create and manage events with rich media support.
+
 ## Features
 
-- Create, read, update, and delete events
-- Attach images and videos to events
-- Search events by title and description
-- Filter events by type (text, image, video)
-- Date range filtering
-- Responsive calendar interface
-- Form validation
-- Error handling
+- Event Management (CRUD operations)
+- Rich Media Support
+  - Image uploads
+  - Video attachments
+  - Text formatting
+- Advanced Search & Filtering
+  - Title/description search
+  - Media type filtering
+  - Date range filtering
+- Interactive Calendar Interface
+- Real-time Form Validation
+- Error Handling & Recovery
 
-## Setup Instructions
+## Prerequisites
 
-### Frontend (React)
+- Node.js >=14.0.0
+- npm >=6.0.0
 
-1. Navigate to the frontend directory:
-2. Install dependencies:
-   ```bash
-   # Frontend
-   cd frontend
-   npm install
+## Environment Setup
 
-   # Backend
-   cd ../backend
-   npm install
-   ```
-3. Start the development servers:
-   ```bash
-   # Frontend
-   cd frontend
-   npm run dev
+### Frontend (.env)
 
-   # Backend
-   cd ../backend
-   npm run start:dev
-   ```
-
-4. Open http://localhost:3000 in your browser
-
-## Deployment Instructions
-
-1. Ensure you have Node.js >=14.0.0 and npm >=6.0.0 installed
-2. Set up your environment variables:
-   - Create `.env` file in backend directory
-   - Create `.env` file in frontend directory
-
-### Deploy to Heroku
-
-## Project Structure
-
-- `/frontend` - React.js frontend application
-- `/backend` - NestJS backend application
-
-## Development Status
-
-Currently implementing Checkpoint 1: Project Setup
+- `REACT_APP_API_URL`: The base URL for the backend API.
+```bash
+REACT_APP_API_URL=http://localhost:5000/api
+```
