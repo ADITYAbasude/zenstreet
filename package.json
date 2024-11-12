@@ -18,14 +18,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^8.2.2",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "concurrently": "^8.2.2"
   },
   "engines": {
     "node": ">=14.0.0",
     "npm": ">=6.0.0"
-  },
-  "resolutions": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
