@@ -50,7 +50,7 @@
 
 ## Project Structure
 
-- `/frontend` - Next.js frontend application
+- `/frontend` - React.js frontend application
 - `/backend` - NestJS backend application
 
 ## Development Status
