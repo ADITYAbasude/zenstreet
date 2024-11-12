@@ -1,0 +1,27 @@
+{
+  "name": "zenstreet",
+  "version": "1.0.0",
+  "description": "ZenStreet - Full Stack Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend && npm start",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "build": "concurrently \"cd frontend && npm run build\" \"cd backend && npm run build\"",
+    "test": "concurrently \"cd frontend && npm test\" \"cd backend && npm test\"",
+    "deploy": "npm run build && npm run start:prod",
+    "start:prod": "cd backend && npm run start:prod",
+    "heroku-postbuild": "npm run install:all && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
